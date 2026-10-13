@@ -1,0 +1,21 @@
+{
+  "name": "automation-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhasanAbir/Automation-Playwright.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AhasanAbir/Automation-Playwright/issues"
+  },
+  "homepage": "https://github.com/AhasanAbir/Automation-Playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5"
+  }
+}
