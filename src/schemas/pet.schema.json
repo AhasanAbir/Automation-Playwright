@@ -1,0 +1,13 @@
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pet",
+  "type": "object",
+  "properties": {
+    "id": {"type": "integer"},
+    "name": {"type": "string"},
+    "status": {"type": "string","enum": ["available", "pending", "sold"]}
+  },
+  "required": ["id", "name", "status"],
+  "additionalProperties": true
+}

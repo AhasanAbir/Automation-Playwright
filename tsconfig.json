@@ -1,6 +1,17 @@
 {
   "compilerOptions": {
-    "types": ["node"]
+    "target": "ES2022",
+    "module": "commonjs",
+    "strict": true,
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noEmit": true
   },
-  "include": ["playwright.config.ts", "tests/**/*.ts"]
+  "include": [
+    "playwright.config.ts",
+    "tests/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.json"
+  ]
 }

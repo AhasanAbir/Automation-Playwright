@@ -4,7 +4,7 @@ test.describe('New Digital Test Cases', () => {
   let page: Page;
 
   test.beforeAll(async () => {
-    const browser = await chromium.launch({headless: false});
+    const browser = await chromium.launch({headless: true});
     const context = await browser.newContext();
     page = await context.newPage();
   });

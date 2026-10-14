@@ -12,6 +12,10 @@ export default defineConfig({
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     headless: true,
+    baseURL: process.env.API_BASE_URL ?? 'https://petstore.swagger.io/v2/',
+    extraHTTPHeaders: {
+      Accept: 'application/json',
+    },
   },
 
   projects: [
@@ -19,21 +23,5 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-
-  //  {
-  //     name: 'firefox',
-  //     use: { ...devices['Desktop Firefox'] },
-  //   },
-
-  //   {
-  //     name: 'webkit',
-  //     use: { ...devices['Desktop Safari'] },
-  //   },
-    
-  //   {
-  //     name: 'Mobile Safari',
-  //     use: { ...devices['iPhone 12 Pro'] },
-  //   },
-
   ],
 });
